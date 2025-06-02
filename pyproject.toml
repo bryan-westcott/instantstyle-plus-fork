@@ -1,5 +1,5 @@
 [project]
-name = "instantstyle-plus-fork"
+name = "instantstyle-plus"
 version = "0.1.0"
 description = "Fork of upstream instantstyle-plus"
 dependencies = [
