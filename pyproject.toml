@@ -1,0 +1,11 @@
+[project]
+name = "instantstyle-plus-fork"
+version = "0.1.0"
+description = "Fork of upstream instantstyle-plus"
+dependencies = [
+    "csd-score-fork == 0.1.0",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
