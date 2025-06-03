@@ -22,7 +22,7 @@ find "${src_dir?}" -type f -name '*.py' | while read -r file; do
     dest="${dest_root?}/${relpath?}"
     
     # create directories and parents in dest_root with same structure
-    mkdir -p "$(dirname "$dest")"
+    mkdir -p "$(dirname ${dest})"
 
     # compute relative symlink target
     symlink_target=$(realpath --relative-to="$(dirname "$dest")" "$file")
