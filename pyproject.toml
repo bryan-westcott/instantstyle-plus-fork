@@ -12,4 +12,4 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 package-dir = {"" = "src_fixed"}
-packages = ["myproject"]
+packages = ["instantstyle_plus"]
