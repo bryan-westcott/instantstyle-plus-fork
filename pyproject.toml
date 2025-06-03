@@ -11,11 +11,5 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-# There are modules in the project root (parallel to src)
-py-modules = ["infer_style", "inversion", "pipeline_controlnet_sd_xl_img2img"]
-# Tell setuptools where packages live
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-# Tell it to find packages under src/
-where = ["src"]  
+package-dir = {"" = "src_fixed"}
+packages = ["myproject"]

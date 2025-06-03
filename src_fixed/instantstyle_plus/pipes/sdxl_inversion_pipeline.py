@@ -1,0 +1,1 @@
+../../../src/pipes/sdxl_inversion_pipeline.py

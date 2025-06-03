@@ -9,7 +9,7 @@ from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import (
     PipelineImageInput
 )
 
-from src.renoise_inversion import inversion_step
+/from instantstyle_plus.renoise_inversion import inversion_step
 
 
 class SDDDIMPipeline(StableDiffusionImg2ImgPipeline):
