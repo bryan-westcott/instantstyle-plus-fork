@@ -3,7 +3,7 @@ name = "instantstyle-plus"
 version = "0.1.0"
 description = "Fork of upstream instantstyle-plus"
 dependencies = [
-    "csd-score-fork == 0.1.0",
+    "csd-score @ git+https://bw42@gitlab.com/bw42/csd_score_fork.git",
 ]
 
 [build-system]
