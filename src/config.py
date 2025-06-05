@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-/from instantstyle_plus.eunms import Model_Type, Scheduler_Type
+from instantstyle_plus.eunms import Model_Type, Scheduler_Type
 
 @dataclass
 class RunConfig:

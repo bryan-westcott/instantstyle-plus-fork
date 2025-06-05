@@ -36,8 +36,8 @@ echo "Rewriting 'from src.' -> 'from ${project?}.' in source files..."
 find "${src_dir?}" -type f -name '*.py' | while read -r file; do
     # in-place, safe sed: modify import
     sed -i \
-        -e "s|\bfrom src\\.|/from ${project}.|g" \
-        -e "s|\bimport src\\.|/import ${project}.|g" \
+        -e "s|\bfrom src\\.|from ${project}.|g" \
+        -e "s|\bimport src\\.|import ${project}.|g" \
         "${file?}"
 done
 

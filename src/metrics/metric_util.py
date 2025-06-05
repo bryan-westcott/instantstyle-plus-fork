@@ -2,7 +2,7 @@ import torch
 from PIL import Image
 from torchvision import transforms
 
-/from instantstyle_plus.metrics.lpips import LPIPS
+from instantstyle_plus.metrics.lpips import LPIPS
 import torch.nn as nn
 
 dev = 'cuda'
