@@ -30,6 +30,12 @@ find "${src_dir?}" -type f -name '*.py' | while read -r file; do
     ln -sf "${symlink_target?}" "${dest?}"
 done
 
+
+# === ADD INIT IN EACH DIR ===
+
+find ${dest_root?} -type d -exec touch {}/__init__.py \;
+
+
 # === REWRITING IMPORTS IN *ORIGINAL* FILES ===
 
 echo "Rewriting 'from src.' -> 'from ${project?}.' in source files..."
