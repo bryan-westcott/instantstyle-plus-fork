@@ -1,0 +1,1 @@
+../../pipeline_controlnet_sd_xl_img2img.py
