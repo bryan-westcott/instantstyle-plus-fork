@@ -15,9 +15,9 @@ import torch
 import torchvision
 from torchvision import transforms
 
-from src.eunms import Model_Type, Scheduler_Type
-from src.utils.enums_utils import get_pipes
-from src.config import RunConfig
+from instantstyle_plus.eunms import Model_Type, Scheduler_Type
+from instantstyle_plus.utils.enums_utils import get_pipes
+from instantstyle_plus.config import RunConfig
 
 from inversion import run as invert
 from CSD_Score.model import CSD_CLIP, convert_state_dict
