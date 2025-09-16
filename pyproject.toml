@@ -3,9 +3,17 @@ name = "instantstyle-plus"
 version = "0.1.0"
 description = "Fork of upstream instantstyle-plus"
 dependencies = [
-    "csd-score @ git+https://bw42@gitlab.com/bw42/csd_score_fork.git",
     "pyrallis",
 ]
+
+[project.optional-dependencies]
+with-csd-score = ["csd-score"]
+
+[tool.uv.sources]
+# Note: you may optionally specify a rev here
+# Note: rely on .git-credentials entry and access token to authenticate, e.g.,
+#           https://<your_user_id>:<your_access_token>@gitlab.com 
+csd-score = { git = "https://gitlab.com/bw42/csd_score_fork.git" }
 
 [build-system]
 requires = ["setuptools"]
